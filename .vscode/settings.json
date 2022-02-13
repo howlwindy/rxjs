@@ -1,0 +1,65 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "pnpm",
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[pug]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "pathAlias.aliasMap": {
+    "@": "${cwd}/src"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "rest-client.logLevel": "info",
+  "rest-client.previewOption": "exchange",
+  "rest-client.decodeEscapedUnicodeCharacters": true,
+  "rest-client.enableCustomVariableReferencesCodeLens": false,
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "version": "v1",
+      "prodToken": "foo",
+      "nonProdToken": "bar"
+    },
+    "local": {
+      "host": "http://0.0.0.0:8080/",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODE2ODk4NiwiZXhwIjoxNjM4MTc0Mzg2fQ.T-BGfNGIkO7jwk22HZQc3xOJXVj9BdkCtKrr9ckrpKI"
+    },
+    "development": {
+      "host": "https://0.0.0.0:9000/",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODE2ODk4NiwiZXhwIjoxNjM4MTc0Mzg2fQ.T-BGfNGIkO7jwk22HZQc3xOJXVj9BdkCtKrr9ckrpKI"
+    },
+    "production": {
+      "host": "",
+      "token": ""
+    }
+  }
+}

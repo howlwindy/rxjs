@@ -1,0 +1,11 @@
+*.js
+*.jsx
+*.ts
+*.tsx
+*.jpg
+*.woff
+
+mock
+dist
+node_modules
+test

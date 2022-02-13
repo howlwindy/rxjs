@@ -1,0 +1,24 @@
+# prettier.io/docs/en/options.html 的顺序
+# 不确定的可以在https://prettier.io/playground/快速测试
+printWidth: 80 # default = 80; 一行最大字数
+tabWidth: 2 # default
+useTabs: false # default
+semi: false # default = true; 分号
+singleQuote: true # default = false; 单引号
+quoteProps: as-needed # default; 对象属性需要引号表示时才使用引号表示
+jsxSingleQuote: false # default; jsx用单引号
+trailingComma: none # default = es5; 最后的逗号
+bracketSpacing: true # default; 不换行时对象花括号与第一个和最后一个项有空格
+bracketSameLine: false # default; 闭标签的>不能另起一行
+arrowParens: always # default; 箭头函数单个参数时也得有括号
+# rangeStart: 0 # default; 每个要检查文件的开始行数
+# rangeEnd: .inf # default; 每个要检查文件的结束行数
+# parser: none # default;
+# filepath: none # default;
+requirePragma: false # default; 是否只格式化文件顶部有特殊注释的文件
+insertPragma: false # default; 标记已格式化的文件
+proseWrap: preserve # default; 是否不管特殊情况机械的进行换行
+htmlWhitespaceSensitivity: ignore # default = css; html/vue/ng中的空格敏感度
+vueIndentScriptAndStyle: false # default; vue的script和style的内容是否缩进
+endOfLine: lf # default; 每个文件最后有空行
+embeddedLanguageFormatting: auto # default; 是否格式化内嵌到其他语言中的语言

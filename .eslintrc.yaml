@@ -1,0 +1,58 @@
+root: true
+env:
+  vue/setup-compiler-macros: true # 解决definProps/defineEmits不用import但no-undef
+  browser: true
+  es2021: true
+extends:
+  # base
+  # [eslint](https://eslint.org/docs/user-guide/getting-started)
+  - eslint:recommended # 基本的shared config
+
+  # ts
+  # [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+  - plugin:@typescript-eslint/recommended # ts的shared config
+
+  # vue
+  # [eslint-plugin-vue](https://eslint.vuejs.org/)
+  # 检查.vue文件的<template>和<script>
+  - plugin:vue/base # *设置规则* -> **启用正确的eslint解析**
+  - plugin:vue/vue3-essential # *增加规则* -> **防止错误和意外行为**
+  - plugin:vue/vue3-strongly-recommended # *增加规则* -> **提高可读性、开发体验**
+  - plugin:vue/vue3-recommended # *增加规则* -> 强制执行社区默认设置，**确保一致性**
+
+  # [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+  - prettier # lint优先的前提下，去除与lint冲突的prettier的配置来解决eslint和prettier的冲突
+  - plugin:jest/recommended
+# [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)
+parser: 'vue-eslint-parser' # 主解析器，处理.vue
+parserOptions:
+  ecmaVersion: 'latest'
+  # [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+  parser: '@typescript-eslint/parser' # 解析.vue文件的<script>；
+  ecmaFeatures:
+    jsx: false
+    tsx: false
+  sourceType: module
+  vueFeatures:
+    # filter: true
+    # interpolationAsNonHTML: false
+plugins:
+  - vue
+  # [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+  - '@typescript-eslint'
+rules:
+  # common start
+  # common end
+  # ts start
+  '@typescript-eslint/no-unused-vars': error
+  '@typescript-eslint/no-explicit-any': off
+  # ts end
+  # vue start
+  vue/script-setup-uses-vars: error # 对<script setup的忽略
+  vue/multi-word-component-names: 0 # 每个vue组件名至少是两个单词。。。
+  # vue end
+# globals:
+# defineProps: readonly
+# defineEmits: readonly
+# defineExpose: readonly
+# withDefaults: readonly
