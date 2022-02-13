@@ -16,3 +16,4 @@ rules:
   string-quotes: single # 双引号
   no-empty-source: null #
   selector-max-type: 2 # 类型选择器上限
+  selector-class-pattern: null

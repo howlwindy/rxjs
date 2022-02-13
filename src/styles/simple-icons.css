@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Simple Icons';
+  src: url('/fonts/SimpleIcons.woff2') format('woff2');
+}
+
+.si {
+  font-family: 'Simple Icons', sans-serif;
+  font-style: normal;
+}
+
+.si-reactivex::before {
+  content: '\f002';
+}
+
+.si-reactivex.si--color::before {
+  color: #b7178c;
+}
