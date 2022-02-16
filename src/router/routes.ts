@@ -37,7 +37,7 @@ const operators: RouteRecordRaw = {
     {
       path: 'multicasting',
       component: () =>
-        import('../pages/operators/multicasting/Multicaasting.vue')
+        import('../pages/operators/multicasting/Multicasting.vue')
     },
     {
       path: 'error-handling',
