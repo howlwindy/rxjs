@@ -3,7 +3,7 @@ import { router } from './router'
 import { createPinia } from 'pinia'
 import App from './App.vue'
 
-import 'highlight.js/styles/night-owl.css'
+import 'highlight.js/styles/default.css'
 import hljs from 'highlight.js'
 
 import './index.css'

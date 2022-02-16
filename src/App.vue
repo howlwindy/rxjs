@@ -47,7 +47,15 @@ recursive(routes())
       <code>{{ v.label || '/' }}</code>
     </router-link>
   </section>
-  <section style="flex: 1; padding-left: 20px">
+  <section
+    style="
+      flex: 1;
+      height: 100vh;
+      padding-left: 20px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    "
+  >
     <suspense>
       <router-view></router-view>
     </suspense>
