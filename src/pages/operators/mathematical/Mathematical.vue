@@ -5,6 +5,7 @@ import MinVue from '@/models/operators/mathematical/Min.vue'
 import ReduceVue from '@/models/operators/mathematical/Reduce.vue'
 </script>
 <template>
+  <h3>mathematical</h3>
   <CountVue></CountVue>
   <MaxVue></MaxVue>
   <MinVue></MinVue>

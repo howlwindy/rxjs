@@ -26,6 +26,7 @@ import ThrottleVue from '@/models/operators/filtering/Throttle.vue'
 import ThrottleTimeVue from '@/models/operators/filtering/ThrottleTime.vue'
 </script>
 <template>
+  <h3>filtering</h3>
   <AuditVue></AuditVue>
   <AuditTimeVue></AuditTimeVue>
   <DebounceVue></DebounceVue>

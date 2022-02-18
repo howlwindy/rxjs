@@ -27,6 +27,7 @@ const subscriptionCode = [
 ]
 </script>
 <template>
+  <h2>observables subscribe observer subscription</h2>
   <pre
     v-highlight
   ><code class="typescript">const subscription = observable(subscriber).subscribe(observer)</code></pre>

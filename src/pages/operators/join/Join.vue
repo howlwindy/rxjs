@@ -8,6 +8,7 @@ import StartWithVue from '@/models/operators/join/StartWith.vue'
 import WithLatestFromVue from '@/models/operators/join/WithLatestFrom.vue'
 </script>
 <template>
+  <h3>join</h3>
   <CombineLatestAllVue></CombineLatestAllVue>
   <ConcatAllVue></ConcatAllVue>
   <ExhaustAllVue></ExhaustAllVue>

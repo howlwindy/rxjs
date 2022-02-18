@@ -7,6 +7,7 @@ import PublishReplayVue from '@/models/operators/multicasting/PublishReplay.vue'
 import ShareVue from '@/models/operators/multicasting/Share.vue'
 </script>
 <template>
+  <h3>multicasting</h3>
   <MulticastVue></MulticastVue>
   <PublishVue></PublishVue>
   <PublishBehaviorVue></PublishBehaviorVue>

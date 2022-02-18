@@ -13,6 +13,7 @@ import TimeoutWithVue from '@/models/operators/utility/TimeoutWith.vue'
 import ToArrayVue from '@/models/operators/utility/ToArray.vue'
 </script>
 <template>
+  <h3>utility</h3>
   <TapVue></TapVue>
   <DelayVue></DelayVue>
   <DelayWhenVue></DelayWhenVue>

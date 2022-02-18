@@ -6,6 +6,7 @@ import FindIndexVue from '@/models/operators/conditional/FindIndex.vue'
 import IsEmptyVue from '@/models/operators/conditional/IsEmpty.vue'
 </script>
 <template>
+  <h3>conditional</h3>
   <DefaultIfEmptyVue></DefaultIfEmptyVue>
   <EveryVue></EveryVue>
   <FindVue></FindVue>

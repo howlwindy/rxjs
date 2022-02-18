@@ -8,6 +8,7 @@ import RaceVue from '@/models/operators/join-creation/Race.vue'
 import ZipVue from '@/models/operators/join-creation/Zip.vue'
 </script>
 <template>
+  <h3>join creation</h3>
   <CombineLatestVue></CombineLatestVue>
   <ConcatVue></ConcatVue>
   <ForkJoinVue></ForkJoinVue>

@@ -29,6 +29,7 @@ import WindowToggleVue from '@/models/operators/transformation/WindowToggle.vue'
 import WindowWhenVue from '@/models/operators/transformation/WindowWhen.vue'
 </script>
 <template>
+  <h3>transformation</h3>
   <BufferVue></BufferVue>
   <BufferCountVue></BufferCountVue>
   <BufferTimeVue></BufferTimeVue>
