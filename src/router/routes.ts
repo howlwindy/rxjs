@@ -1,10 +1,10 @@
 import { RouteRecordRaw } from 'vue-router'
 
 const observablesSubscribeObserverSubscription: RouteRecordRaw = {
-  path: '/observables-subscribe-observer-subscription',
+  path: '/observable-subscriber-observer-subscription-subject-scheduler',
   component: () =>
     import(
-      '../pages/observables-subscribe-observer-subscription/ObservablesSubscribeObserverSubscription.vue'
+      '../pages/observable-subscriber-observer-subscription-subject-scheduler/ObservableSubscriberObserverSubscriptionSubjectScheduler.vue'
     )
 }
 
@@ -64,20 +64,8 @@ const operators: RouteRecordRaw = {
   ]
 }
 
-const subjects: RouteRecordRaw = {
-  path: '/subjects',
-  component: () => import('../pages/subjects/Subjects.vue')
-}
-
-const scheduler: RouteRecordRaw = {
-  path: '/scheduler',
-  component: () => import('../pages/scheduler/Scheduler.vue')
-}
-
 export const routes = (): RouteRecordRaw[] => [
   { path: '/', component: () => import('../pages/Home.vue') },
   observablesSubscribeObserverSubscription,
-  operators,
-  subjects,
-  scheduler
+  operators
 ]
