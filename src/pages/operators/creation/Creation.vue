@@ -3,7 +3,6 @@ import AjaxVue from '@/models/operators/creation/Ajax.vue'
 import BindCallbackVue from '@/models/operators/creation/BindCallback.vue'
 import BindNodeCallbackVue from '@/models/operators/creation/BindNodeCallback.vue'
 import DeferVue from '@/models/operators/creation/Defer.vue'
-import EmptyVue from '@/models/operators/creation/Empty.vue'
 import FromVue from '@/models/operators/creation/From.vue'
 import FromEventVue from '@/models/operators/creation/FromEvent.vue'
 import FromEventPatternVue from '@/models/operators/creation/FromEventPattern.vue'
@@ -21,7 +20,6 @@ import IifVue from '@/models/operators/creation/Iif.vue'
   <BindCallbackVue></BindCallbackVue>
   <BindNodeCallbackVue></BindNodeCallbackVue>
   <DeferVue></DeferVue>
-  <EmptyVue></EmptyVue>
   <FromVue></FromVue>
   <FromEventVue></FromEventVue>
   <FromEventPatternVue></FromEventPatternVue>
