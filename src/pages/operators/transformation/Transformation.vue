@@ -6,7 +6,6 @@ import BufferToggleVue from '@/models/operators/transformation/BufferToggle.vue'
 import BufferWhenVue from '@/models/operators/transformation/BufferWhen.vue'
 import ConcatMapVue from '@/models/operators/transformation/ConcatMap.vue'
 import ConcatMapToVue from '@/models/operators/transformation/ConcatMapTo.vue'
-import ExhaustVue from '@/models/operators/transformation/Exhaust.vue'
 import ExhaustMapVue from '@/models/operators/transformation/ExhaustMap.vue'
 import ExpandVue from '@/models/operators/transformation/Expand.vue'
 import GroupByVue from '@/models/operators/transformation/GroupBy.vue'
@@ -16,8 +15,6 @@ import MergeMapVue from '@/models/operators/transformation/MergeMap.vue'
 import MergeMapToVue from '@/models/operators/transformation/MergeMapTo.vue'
 import MergeScanVue from '@/models/operators/transformation/MergeScan.vue'
 import PairwiseVue from '@/models/operators/transformation/Pairwise.vue'
-import PartitionVue from '@/models/operators/transformation/Partition.vue'
-import PluckVue from '@/models/operators/transformation/Pluck.vue'
 import ScanVue from '@/models/operators/transformation/Scan.vue'
 import SwitchScanVue from '@/models/operators/transformation/SwitchScan.vue'
 import SwitchMapVue from '@/models/operators/transformation/SwitchMap.vue'
@@ -37,7 +34,6 @@ import WindowWhenVue from '@/models/operators/transformation/WindowWhen.vue'
   <BufferWhenVue></BufferWhenVue>
   <ConcatMapVue></ConcatMapVue>
   <ConcatMapToVue></ConcatMapToVue>
-  <ExhaustVue></ExhaustVue>
   <ExhaustMapVue></ExhaustMapVue>
   <ExpandVue></ExpandVue>
   <ExhaustMapVue></ExhaustMapVue>
@@ -49,8 +45,6 @@ import WindowWhenVue from '@/models/operators/transformation/WindowWhen.vue'
   <MergeMapToVue></MergeMapToVue>
   <MergeScanVue></MergeScanVue>
   <PairwiseVue></PairwiseVue>
-  <PartitionVue></PartitionVue>
-  <PluckVue></PluckVue>
   <ScanVue></ScanVue>
   <SwitchScanVue></SwitchScanVue>
   <SwitchMapVue></SwitchMapVue>
