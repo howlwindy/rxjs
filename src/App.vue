@@ -13,7 +13,9 @@ const nav: INav[] = []
 const recursive = (arr: RouteRecordRaw[], route = '', level = 0) => {
   arr.map((v) => {
     nav.push({
-      label: v.path[0] === '/' ? v.path.slice(1) : v.path,
+      label: `${v.path[0] === '/' ? v.path.slice(1) : v.path} - ${
+        v.meta?.notUnderstand
+      }/${v.meta?.count}`,
       route: `${route}${v.path[0] === '/' ? '' : '/'}${v.path}`,
       level
     })

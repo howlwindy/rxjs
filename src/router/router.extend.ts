@@ -2,6 +2,7 @@ import 'vue-router'
 
 declare module 'vue-router' {
   interface RouteMeta {
-    x: string
+    count?: string | number
+    notUnderstand?: string | number
   }
 }
