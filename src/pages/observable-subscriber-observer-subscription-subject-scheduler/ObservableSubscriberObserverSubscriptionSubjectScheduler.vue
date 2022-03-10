@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
-// import { Observable, Subject } from 'rxjs'
+import { Observable, Subscriber, Observer } from 'rxjs'
 
 // const subscription = new Observable<number>((subscriber) => {
 //   subscriber.closed
@@ -25,13 +25,13 @@ import SrcVue from '@/components/Src.vue'
 // import { Subject } from 'rxjs'
 // const subject = new Subject()
 // const subject = new Subject()
+
 const src = [
   'const observable = new Observable(subscriber: subscriber)',
   'const subscription = observable.subscribe(observer)',
   'const unsubscription = subscription.unsubscribe()',
   'const subject = new Subject()'
 ]
-
 const observableSrc = [
   '// observable',
   'Observable(subscribe?: (this: Observable<T>, subscriber: Subscriber<T>) => TeardownLogic)',
@@ -117,6 +117,24 @@ const animationSrc = [
   'now: () => number <= Scheduler',
   'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
 ]
+
+const subscribe = (subscriber: Subscriber<number>) => {
+  subscriber.closed = false
+  subscriber.next(0)
+  subscriber.next(1)
+  subscriber.next(2)
+  subscriber.complete()
+}
+const observable$ = new Observable(subscribe)
+const observer: Observer<number> = {
+  next: (v) => console.log(v),
+  error: (e) => console.log(e),
+  complete: () => console.log('complete')
+}
+const subscription = observable$.subscribe(observer)
+observable$.subscribe((v) => console.log(v))
+const unsubscription = subscription.unsubscribe()
+console.log(unsubscription)
 </script>
 <template>
   <h2>observable subscriber observer subscription subject scheduler</h2>
