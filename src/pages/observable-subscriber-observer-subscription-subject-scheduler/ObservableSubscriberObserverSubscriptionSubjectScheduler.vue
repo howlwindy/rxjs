@@ -1,36 +1,37 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
-import { Observable, Subscriber, Observer } from 'rxjs'
-
-// const subscription = new Observable<number>((subscriber) => {
-//   subscriber.closed
-//   subscriber.next()
-//   subscriber.error()
-//   subscriber.complete()
-//   subscriber.remove
-//   subscriber.unsubscribe()
-//   subscriber.add()
-// })
-//   .subscribe({
-//     next: (v) => console.log(v),
-//     error: (e) => console.log(e),
-//     complete: () => console.log('complete')
-//   })
-//   .unsubscribe()
-
-// const observable = new Observable()
-// const subscription = observable.subscribe()
-// const unsubscription = subscription.unsubscribe()
-
-// import { Subject } from 'rxjs'
-// const subject = new Subject()
-// const subject = new Subject()
+// import { Observable, Subscriber, Observer, Subject } from 'rxjs'
 
 const src = [
-  'const observable = new Observable(subscriber: subscriber)',
-  'const subscription = observable.subscribe(observer)',
-  'const unsubscription = subscription.unsubscribe()',
-  'const subject = new Subject()'
+  `// observable单播，subject多播
+const subscriber = (subscriber: Subscriber<string>) => { // operators的重要api
+  subscriber.next('observable value')
+  // subscriber.error(e?: any)
+  // subscriber.complete()
+}
+const observable$ = new Observable(subscriber)
+const observer: Observer<string> = {
+  next: (v) => console.log(v),
+  error: (e) => console.log(e),
+  complete: () => console.log('complete')
+}
+console.log('----> observable')
+const subscriptionO0 = observable$.subscribe(observer)
+const unsubscriptionO0 = subscriptionO0.unsubscribe()
+const subscriptionO1 = observable$.subscribe(observer)
+const unsubscriptionO1 = subscriptionO1.unsubscribe()
+// ----> observable
+// observable value
+// observable value
+
+const subject = new Subject<string>()
+const subscriptionS0 = subject.subscribe(observer)
+const subscriptionS1 = subject.subscribe(observer)
+
+console.log('----> subject')
+subject.next('subject value')
+// ----> subject
+// 2 subject value`
 ]
 const observableSrc = [
   '// observable',
@@ -118,23 +119,29 @@ const animationSrc = [
   'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
 ]
 
-const subscribe = (subscriber: Subscriber<number>) => {
-  subscriber.closed = false
-  subscriber.next(0)
-  subscriber.next(1)
-  subscriber.next(2)
-  subscriber.complete()
-}
-const observable$ = new Observable(subscribe)
-const observer: Observer<number> = {
-  next: (v) => console.log(v),
-  error: (e) => console.log(e),
-  complete: () => console.log('complete')
-}
-const subscription = observable$.subscribe(observer)
-observable$.subscribe((v) => console.log(v))
-const unsubscription = subscription.unsubscribe()
-console.log(unsubscription)
+// const subscriber = (subscriber: Subscriber<string>) => {
+//   subscriber.next('observable value')
+//   // subscriber.error(e?: any)
+//   // subscriber.complete()
+// }
+// const observable$ = new Observable(subscriber)
+// const observer: Observer<string> = {
+//   next: (v) => console.log(v),
+//   error: (e) => console.log(e),
+//   complete: () => console.log('complete')
+// }
+// console.log('----> observable')
+// const subscriptionO0 = observable$.subscribe(observer)
+// const unsubscriptionO0 = subscriptionO0.unsubscribe()
+// const subscriptionO1 = observable$.subscribe(observer)
+// const unsubscriptionO1 = subscriptionO1.unsubscribe()
+
+// const subject = new Subject<string>()
+// const subscriptionS0 = subject.subscribe(observer)
+// const subscriptionS1 = subject.subscribe(observer)
+
+// console.log('----> subject')
+// subject.next('subject value')
 </script>
 <template>
   <h2>observable subscriber observer subscription subject scheduler</h2>
