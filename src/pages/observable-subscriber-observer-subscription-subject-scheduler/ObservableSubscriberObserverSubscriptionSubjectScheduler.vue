@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
-// import { Observable, Subscriber, Observer, Subject } from 'rxjs'
+// import {
+//   Observable,
+//   Subscriber,
+//   Observer,
+//   Subject,
+//   BehaviorSubject,
+//   ReplaySubject,
+//   AsyncSubject
+// } from 'rxjs'
 
 const src = [
-  `// observable单播，subject多播
+  `// observable单播，hot直播，cold点播；subject多播
 const subscriber = (subscriber: Subscriber<string>) => { // operators的重要api
   subscriber.next('observable value')
   // subscriber.error(e?: any)
@@ -77,8 +85,49 @@ const subscriptionSrc = [
   'closed: boolean'
 ]
 const subjectSrc = [
-  '// subject',
+  '// subject，直播',
   'Subject()',
+  'asObservable(): Observable<T>',
+  'next(value: T): void',
+  'error(err: any): void',
+  'complete(): void',
+  'unsubscribe(): void',
+  'observed(): boolean',
+  'closed: boolean',
+  'forEach <= Observable',
+  'pipe <= Observable',
+  'subscribe <= Observable'
+]
+const behaviorSubjectSrc = [
+  '// behaviorSubject，只记住最新值',
+  'asObservable(): Observable<T>',
+  'next(value: T): void',
+  'error(err: any): void',
+  'complete(): void',
+  'unsubscribe(): void',
+  'observed(): boolean',
+  'closed: boolean',
+  'forEach <= Observable',
+  'pipe <= Observable',
+  'subscribe <= Observable',
+  'value(): T',
+  'getValue(): T'
+]
+const replaySubjectSrc = [
+  '// replaySubject，点播',
+  'asObservable(): Observable<T>',
+  'next(value: T): void',
+  'error(err: any): void',
+  'complete(): void',
+  'unsubscribe(): void',
+  'observed(): boolean',
+  'closed: boolean',
+  'forEach <= Observable',
+  'pipe <= Observable',
+  'subscribe <= Observable'
+]
+const asyncSubjectSrc = [
+  '// asyncSubject，complete时推送值且之后不再推送',
   'asObservable(): Observable<T>',
   'next(value: T): void',
   'error(err: any): void',
@@ -151,6 +200,9 @@ const animationSrc = [
   <SrcVue :data="observerSrc"></SrcVue>
   <SrcVue :data="subscriptionSrc"></SrcVue>
   <SrcVue :data="subjectSrc"></SrcVue>
+  <SrcVue :data="behaviorSubjectSrc"></SrcVue>
+  <SrcVue :data="replaySubjectSrc"></SrcVue>
+  <SrcVue :data="asyncSubjectSrc"></SrcVue>
   <SrcVue :data="queueSrc"></SrcVue>
   <SrcVue :data="asapSrc"></SrcVue>
   <SrcVue :data="asyncSrc"></SrcVue>
