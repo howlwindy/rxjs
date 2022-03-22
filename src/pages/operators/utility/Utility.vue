@@ -9,7 +9,6 @@ import SubscribeOnVue from '@/models/operators/utility/SubscribeOn.vue'
 import TimeIntervalVue from '@/models/operators/utility/TimeInterval.vue'
 import TimestampVue from '@/models/operators/utility/Timestamp.vue'
 import TimeoutVue from '@/models/operators/utility/Timeout.vue'
-import TimeoutWithVue from '@/models/operators/utility/TimeoutWith.vue'
 import ToArrayVue from '@/models/operators/utility/ToArray.vue'
 </script>
 <template>
@@ -24,7 +23,6 @@ import ToArrayVue from '@/models/operators/utility/ToArray.vue'
   <TimeIntervalVue></TimeIntervalVue>
   <TimestampVue></TimestampVue>
   <TimeoutVue></TimeoutVue>
-  <TimeoutWithVue></TimeoutWithVue>
   <ToArrayVue></ToArrayVue>
 </template>
 <style scoped></style>
