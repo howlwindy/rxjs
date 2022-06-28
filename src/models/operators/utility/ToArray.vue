@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = ['toArray<T>(): OperatorFunction<T, T[]>']
 </script>
 <template>

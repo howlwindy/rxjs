@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'share<T>(): MonoTypeOperatorFunction<T>',
-  'share<T>(options: ShareConfig<T>): MonoTypeOperatorFunction<T>'
+  'share<T>(options: ShareConfig<T>): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

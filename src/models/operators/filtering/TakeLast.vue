@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'takeLast<T>(count: number): MonoTypeOperatorFunction<T>'
+  'takeLast<T>(count: number): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

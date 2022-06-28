@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { interval } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'interval(period?: number, scheduler?: SchedulerLike): Observable<number>'
+  'interval(period?: number, scheduler?: SchedulerLike): Observable<number>',
 ]
 const data = ref<string>()
 const result = ref<string>()

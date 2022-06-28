@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'windowWhen<T>(closingSelector: () => ObservableInput<any>): OperatorFunction<T, Observable<T>>'
+  'windowWhen<T>(closingSelector: () => ObservableInput<any>): OperatorFunction<T, Observable<T>>',
 ]
 </script>
 <template>

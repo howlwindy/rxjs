@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'audit<T>(durationSelector: (value: T) => ObservableInput<any>): MonoTypeOperatorFunction<T>'
+  'audit<T>(durationSelector: (value: T) => ObservableInput<any>): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

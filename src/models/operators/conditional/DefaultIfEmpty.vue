@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'defaultIfEmpty<T, R>(defaultValue: R): OperatorFunction<T, T | R>'
+  'defaultIfEmpty<T, R>(defaultValue: R): OperatorFunction<T, T | R>',
 ]
 </script>
 <template>

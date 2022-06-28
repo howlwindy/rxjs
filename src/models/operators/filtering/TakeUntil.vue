@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'takeUntil<T>(notifier: ObservableInput<any>): MonoTypeOperatorFunction<T>'
+  'takeUntil<T>(notifier: ObservableInput<any>): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

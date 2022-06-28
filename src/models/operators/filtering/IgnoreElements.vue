@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = ['ignoreElements(): OperatorFunction<unknown, never>']
 </script>
 <template>

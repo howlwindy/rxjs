@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { iif, of } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'iif<T, F>(condition: () => boolean, trueResult: ObservableInput<T>, falseResult: ObservableInput<F>): Observable<T | F>'
+  'iif<T, F>(condition: () => boolean, trueResult: ObservableInput<T>, falseResult: ObservableInput<F>): Observable<T | F>',
 ]
 const data = ref<string>('init')
 const result = ref<string>()

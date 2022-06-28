@@ -1,12 +1,11 @@
-import { createApp } from 'vue'
-import { router } from './router'
-import { createPinia } from 'pinia'
-import App from './App.vue'
-
-import 'highlight.js/styles/default.css'
 import hljs from 'highlight.js'
+import 'highlight.js/styles/default.css'
+import { createPinia } from 'pinia'
+import { createApp } from 'vue'
 
+import App from './App.vue'
 import './index.css'
+import { router } from './router'
 
 const app = createApp(App)
 

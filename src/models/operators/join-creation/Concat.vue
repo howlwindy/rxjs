@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { concat } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'concat<T extends readonly unknown[]>(...inputs: [...ObservableInputTuple<T>]): Observable<T[number]>',
-  'concat<T extends readonly unknown[]>(...inputsAndScheduler: [...ObservableInputTuple<T>, SchedulerLike]): Observable<T[number]>'
+  'concat<T extends readonly unknown[]>(...inputsAndScheduler: [...ObservableInputTuple<T>, SchedulerLike]): Observable<T[number]>',
 ]
 const data = ref<string>('')
 const result = ref<string>()

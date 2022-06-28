@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'min<T>(comparer?: (x: T, y: T) => number): MonoTypeOperatorFunction<T>'
+  'min<T>(comparer?: (x: T, y: T) => number): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

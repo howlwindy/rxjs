@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = ['isEmpty<T>(): OperatorFunction<T, boolean>']
 </script>
 <template>

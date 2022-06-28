@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'ajax<T>(config: AjaxConfig): Observable<AjaxResponse<T>>',
-  'ajax<T>(url: string): Observable<AjaxResponse<T>>'
+  'ajax<T>(url: string): Observable<AjaxResponse<T>>',
 ]
 </script>
 <template>

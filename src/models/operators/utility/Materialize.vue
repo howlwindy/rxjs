@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'materialize<T>(): OperatorFunction<T, Notification<T> & ObservableNotification<T>>'
+  'materialize<T>(): OperatorFunction<T, Notification<T> & ObservableNotification<T>>',
 ]
 </script>
 <template>

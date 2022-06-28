@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { generate } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'generate<S>(options: GenerateBaseOptions<S>): Observable<S>',
-  'generate<T, S>(options: GenerateOptions<T, S>): Observable<T>'
+  'generate<T, S>(options: GenerateOptions<T, S>): Observable<T>',
 ]
 const data = ref<string>()
 const result = ref<string>()

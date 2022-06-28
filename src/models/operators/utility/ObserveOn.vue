@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'observeOn<T>(scheduler: SchedulerLike, delay?: number): MonoTypeOperatorFunction<T>'
+  'observeOn<T>(scheduler: SchedulerLike, delay?: number): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

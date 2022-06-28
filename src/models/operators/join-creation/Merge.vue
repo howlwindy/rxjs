@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { merge } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'merge<A extends readonly unknown[]>(...sources: [...ObservableInputTuple<A>]): Observable<A[number]>',
-  'merge<A extends readonly unknown[]>(...sourcesAndConcurrency: [...ObservableInputTuple<A>, number?]): Observable<A[number]>'
+  'merge<A extends readonly unknown[]>(...sourcesAndConcurrency: [...ObservableInputTuple<A>, number?]): Observable<A[number]>',
 ]
 const data = ref<string>('')
 const result = ref<string>()

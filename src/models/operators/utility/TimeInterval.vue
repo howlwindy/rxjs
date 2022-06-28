@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'timeInterval<T>(scheduler?: SchedulerLike): OperatorFunction<T, TimeInterval<T>>'
+  'timeInterval<T>(scheduler?: SchedulerLike): OperatorFunction<T, TimeInterval<T>>',
 ]
 </script>
 <template>

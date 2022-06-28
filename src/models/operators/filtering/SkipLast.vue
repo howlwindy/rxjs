@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'skipLast<T>(skipCount: number): MonoTypeOperatorFunction<T>'
+  'skipLast<T>(skipCount: number): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

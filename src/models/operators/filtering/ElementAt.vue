@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'elementAt<T, D = T>(index: number, defaultValue?: D): OperatorFunction<T, T | D>'
+  'elementAt<T, D = T>(index: number, defaultValue?: D): OperatorFunction<T, T | D>',
 ]
 </script>
 <template>

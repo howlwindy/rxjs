@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = ['take<T>(count: number): MonoTypeOperatorFunction<T>']
 </script>
 <template>

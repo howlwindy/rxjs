@@ -2,7 +2,7 @@
   "name": "web",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite serve --mode development",
+    "dev": "pnpm up --latest && vite serve --mode development",
     "test": "",
     "test:unit": "jest",
     "test:e2e": "",
@@ -45,6 +45,7 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.11.26",
     "@typescript-eslint/eslint-plugin": "^5.14.0",

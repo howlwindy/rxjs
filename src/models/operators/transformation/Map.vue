@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'map<T, R>(project: (value: T, index: number) => R): OperatorFunction<T, R>'
+  'map<T, R>(project: (value: T, index: number) => R): OperatorFunction<T, R>',
 ]
 </script>
 <template>

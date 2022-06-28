@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'single<T>(predicate: BooleanConstructor): OperatorFunction<T, TruthyTypesOf<T>>',
-  'single<T>(predicate?: (value: T, index: number, source: Observable<T>) => boolean): MonoTypeOperatorFunction<T>'
+  'single<T>(predicate?: (value: T, index: number, source: Observable<T>) => boolean): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

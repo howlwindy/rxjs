@@ -7,9 +7,9 @@ const observablesSubscribeObserverSubscription: RouteRecordRaw = {
       '../pages/observable-subscriber-observer-subscription-subject-scheduler/ObservableSubscriberObserverSubscriptionSubjectScheduler.vue'
     ),
   meta: {
-    count: '?',
-    notUnderstand: '?'
-  }
+    count: 5,
+    done: 0,
+  },
 }
 
 const operators: RouteRecordRaw = {
@@ -17,7 +17,7 @@ const operators: RouteRecordRaw = {
   component: () => import('../pages/operators/Operators.vue'),
   meta: {
     count: 103,
-    notUnderstand: '?'
+    done: 0,
   },
   children: [
     {
@@ -25,8 +25,8 @@ const operators: RouteRecordRaw = {
       component: () => import('../pages/operators/creation/Creation.vue'),
       meta: {
         count: 14,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'join-creation',
@@ -34,8 +34,8 @@ const operators: RouteRecordRaw = {
         import('../pages/operators/join-creation/JoinCreation.vue'),
       meta: {
         count: 7,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'transformation',
@@ -43,24 +43,24 @@ const operators: RouteRecordRaw = {
         import('../pages/operators/transformation/Transformation.vue'),
       meta: {
         count: 25,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'filtering',
       component: () => import('../pages/operators/filtering/Filtering.vue'),
       meta: {
         count: 25,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'join',
       component: () => import('../pages/operators/join/Join.vue'),
       meta: {
         count: 7,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'multicasting',
@@ -68,8 +68,8 @@ const operators: RouteRecordRaw = {
         import('../pages/operators/multicasting/Multicasting.vue'),
       meta: {
         count: 1,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'error-handling',
@@ -77,24 +77,24 @@ const operators: RouteRecordRaw = {
         import('../pages/operators/error-handling/ErrorHandling.vue'),
       meta: {
         count: 3,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'utility',
       component: () => import('../pages/operators/utility/Utility.vue'),
       meta: {
         count: 12,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'conditional',
       component: () => import('../pages/operators/conditional/Conditional.vue'),
       meta: {
         count: 5,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'mathematical',
@@ -102,18 +102,18 @@ const operators: RouteRecordRaw = {
         import('../pages/operators/mathematical/Mathematical.vue'),
       meta: {
         count: 4,
-        notUnderstand: '?'
-      }
+        done: 0,
+      },
     },
     {
       path: 'custom',
       component: () => import('../pages/operators/custom/Custom.vue'),
       meta: {
-        count: '?',
-        notUnderstand: '?'
-      }
-    }
-  ]
+        count: 0,
+        done: 0,
+      },
+    },
+  ],
 }
 
 export const routes = (): RouteRecordRaw[] => [
@@ -121,10 +121,10 @@ export const routes = (): RouteRecordRaw[] => [
     path: '/',
     component: () => import('../pages/Home.vue'),
     meta: {
-      count: '?',
-      notUnderstand: '?'
-    }
+      count: '',
+      done: '',
+    },
   },
   observablesSubscribeObserverSubscription,
-  operators
+  operators,
 ]

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'timestamp<T>(timestampProvider?: TimestampProvider): OperatorFunction<T, Timestamp<T>>'
+  'timestamp<T>(timestampProvider?: TimestampProvider): OperatorFunction<T, Timestamp<T>>',
 ]
 </script>
 <template>

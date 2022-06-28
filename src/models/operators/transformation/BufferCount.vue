@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'bufferCount<T>(bufferSize: number, startBufferEvery?: number | null): OperatorFunction<T, T[]>'
+  'bufferCount<T>(bufferSize: number, startBufferEvery?: number | null): OperatorFunction<T, T[]>',
 ]
 </script>
 <template>

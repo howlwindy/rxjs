@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { combineLatest } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'combineLatest<T extends AnyCatcher>(arg: T): Observable<unknown>',
   'combineLatest(sources: []): Observable<never>',
@@ -9,7 +11,7 @@ const src: string[] = [
   'combineLatest<A extends readonly unknown[], R>(sources: readonly [...ObservableInputTuple<A>], resultSelector: (...values: A) => R): Observable<R>',
   'combineLatest(sourcesObject: {[K in any]: never}): Observable<never>',
   'combineLatest<T extends Record<string, ObservableInput<any>>>(sourcesObject: T): Observable<{[K in keyof T]: ObservedValueOf<T[K]>}>',
-  'combineLatestInit(observables: ObservableInput<any>[], scheduler?: SchedulerLike, valueTransform?: (values: any[]) => any): (subscriber: Subscriber<any>) => void'
+  'combineLatestInit(observables: ObservableInput<any>[], scheduler?: SchedulerLike, valueTransform?: (values: any[]) => any): (subscriber: Subscriber<any>) => void',
 ]
 const data = ref<string>('')
 const result = ref<string[]>()

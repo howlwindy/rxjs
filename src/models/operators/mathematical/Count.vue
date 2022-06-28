@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'count<T>(predicate?: (value: T, index: number) => boolean): OperatorFunction<T, number>'
+  'count<T>(predicate?: (value: T, index: number) => boolean): OperatorFunction<T, number>',
 ]
 </script>
 <template>

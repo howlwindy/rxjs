@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { defer } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'defer<R extends ObservableInput<any>>(observableFactory: () => R): Observable<ObservedValueOf<R>>'
+  'defer<R extends ObservableInput<any>>(observableFactory: () => R): Observable<ObservedValueOf<R>>',
 ]
 const data = ref<string>()
 const result = ref<string>()

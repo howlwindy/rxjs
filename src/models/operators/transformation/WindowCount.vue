@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'windowCount<T>(windowSize: number, startWindowEvery?: number): OperatorFunction<T, Observable<T>>'
+  'windowCount<T>(windowSize: number, startWindowEvery?: number): OperatorFunction<T, Observable<T>>',
 ]
 </script>
 <template>

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'dematerialize<N extends ObservableNotification<any>>(): OperatorFunction<N, ValueFromNotification<N>>'
+  'dematerialize<N extends ObservableNotification<any>>(): OperatorFunction<N, ValueFromNotification<N>>',
 ]
 </script>
 <template>

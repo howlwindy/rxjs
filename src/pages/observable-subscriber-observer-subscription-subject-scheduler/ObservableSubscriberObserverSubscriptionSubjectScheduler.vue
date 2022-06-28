@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 // import {
 //   Observable,
 //   Subscriber,
@@ -39,7 +40,7 @@ const subscriptionS1 = subject.subscribe(observer)
 console.log('----> subject')
 subject.next('subject value')
 // ----> subject
-// 2 subject value`
+// 2 subject value`,
 ]
 const observableSrc = [
   '// observable',
@@ -59,7 +60,7 @@ const observableSrc = [
   'pipe<A, B, C, D, E, F, G>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>, op3: OperatorFunction<B, C>, op4: OperatorFunction<C, D>, op5: OperatorFunction<D, E>, op6: OperatorFunction<E, F>, op7: OperatorFunction<F, G>): Observable<G>',
   'pipe<A, B, C, D, E, F, G, H>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>, op3: OperatorFunction<B, C>, op4: OperatorFunction<C, D>, op5: OperatorFunction<D, E>, op6: OperatorFunction<E, F>, op7: OperatorFunction<F, G>, op8: OperatorFunction<G, H>): Observable<H>',
   'pipe<A, B, C, D, E, F, G, H, I>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>, op3: OperatorFunction<B, C>, op4: OperatorFunction<C, D>, op5: OperatorFunction<D, E>, op6: OperatorFunction<E, F>, op7: OperatorFunction<F, G>, op8: OperatorFunction<G, H>, op9: OperatorFunction<H, I>): Observable<I>',
-  'pipe<A, B, C, D, E, F, G, H, I>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>, op3: OperatorFunction<B, C>, op4: OperatorFunction<C, D>, op5: OperatorFunction<D, E>, op6: OperatorFunction<E, F>, op7: OperatorFunction<F, G>, op8: OperatorFunction<G, H>, op9: OperatorFunction<H, I>, ...operations: OperatorFunction<any, any>[]): Observable<unknown>'
+  'pipe<A, B, C, D, E, F, G, H, I>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>, op3: OperatorFunction<B, C>, op4: OperatorFunction<C, D>, op5: OperatorFunction<D, E>, op6: OperatorFunction<E, F>, op7: OperatorFunction<F, G>, op8: OperatorFunction<G, H>, op9: OperatorFunction<H, I>, ...operations: OperatorFunction<any, any>[]): Observable<unknown>',
 ]
 const subscriberSrc = [
   '// subscriber',
@@ -69,20 +70,20 @@ const subscriberSrc = [
   'complete(): void',
   'remove(teardown: Exclude<TeardownLogic, void>): void',
   'unsubscribe(): void',
-  'add(teardown: TeardownLogic): void'
+  'add(teardown: TeardownLogic): void',
 ]
 const observerSrc = [
   '// observer',
   'next: (value: T) => void',
   'error: (err: any) => void',
-  'complete: () => void'
+  'complete: () => void',
 ]
 const subscriptionSrc = [
   '// subscription',
   'unsubscribe(): void',
   'add(teardown: TeardownLogic): void',
   'remove(teardown: Exclude<TeardownLogic, void>): void',
-  'closed: boolean'
+  'closed: boolean',
 ]
 const subjectSrc = [
   '// subject，直播',
@@ -96,7 +97,7 @@ const subjectSrc = [
   'closed: boolean',
   'forEach <= Observable',
   'pipe <= Observable',
-  'subscribe <= Observable'
+  'subscribe <= Observable',
 ]
 const behaviorSubjectSrc = [
   '// behaviorSubject，只记住最新值',
@@ -111,7 +112,7 @@ const behaviorSubjectSrc = [
   'pipe <= Observable',
   'subscribe <= Observable',
   'value(): T',
-  'getValue(): T'
+  'getValue(): T',
 ]
 const replaySubjectSrc = [
   '// replaySubject，点播',
@@ -124,7 +125,7 @@ const replaySubjectSrc = [
   'closed: boolean',
   'forEach <= Observable',
   'pipe <= Observable',
-  'subscribe <= Observable'
+  'subscribe <= Observable',
 ]
 const asyncSubjectSrc = [
   '// asyncSubject，complete时推送值且之后不再推送',
@@ -137,35 +138,35 @@ const asyncSubjectSrc = [
   'closed: boolean',
   'forEach <= Observable',
   'pipe <= Observable',
-  'subscribe <= Observable'
+  'subscribe <= Observable',
 ]
 const queueSrc = [
   '// queueScheduler',
   'actions: Array<AsyncAction<any>> <= AsyncScheduler',
   'flush(action: AsyncAction<any>): void <= AsyncScheduler',
   'now: () => number <= Scheduler',
-  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
+  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler',
 ]
 const asapSrc = [
   '// asapScheduler',
   'actions: Array<AsyncAction<any>> <= AsyncScheduler',
   'flush(action?: AsyncAction<any>): void',
   'now: () => number <= Scheduler',
-  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
+  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler',
 ]
 const asyncSrc = [
   '// asyncScheduler',
   'actions: Array<AsyncAction<any>>',
   'flush(action: AsyncAction<any>): void',
   'now: () => number <= Scheduler',
-  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
+  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler',
 ]
 const animationSrc = [
   '// animationFrameScheduler',
   'actions: Array<AsyncAction<any>> <= AsyncScheduler',
   'flush(action?: AsyncAction<any>): void',
   'now: () => number <= Scheduler',
-  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler'
+  'schedule<T>(work: (this: SchedulerAction<T>, state?: T) => void, delay?: number, state?: T): Subscription <= Scheduler',
 ]
 
 // const subscriber = (subscriber: Subscriber<string>) => {

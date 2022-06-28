@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'sample<T>(notifier: Observable<any>): MonoTypeOperatorFunction<T>'
+  'sample<T>(notifier: Observable<any>): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

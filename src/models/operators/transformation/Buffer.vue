@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'buffer<T>(closingNotifier: Observable<any>): OperatorFunction<T, T[]>'
+  'buffer<T>(closingNotifier: Observable<any>): OperatorFunction<T, T[]>',
 ]
 </script>
 <template>

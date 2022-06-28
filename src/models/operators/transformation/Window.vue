@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'window<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>>'
+  'window<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>>',
 ]
 </script>
 <template>

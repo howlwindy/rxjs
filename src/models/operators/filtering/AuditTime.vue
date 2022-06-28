@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'auditTime<T>(duration: number, scheduler?: SchedulerLike): MonoTypeOperatorFunction<T>'
+  'auditTime<T>(duration: number, scheduler?: SchedulerLike): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

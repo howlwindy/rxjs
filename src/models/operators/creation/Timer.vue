@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { timer } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'timer(due: number | Date, scheduler?: SchedulerLike): Observable<0>',
-  'timer(startDue: number | Date, intervalDuration: number, scheduler?: SchedulerLike): Observable<number>'
+  'timer(startDue: number | Date, intervalDuration: number, scheduler?: SchedulerLike): Observable<number>',
 ]
 const data = ref<string>()
 const result = ref<string>()

@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { of, zip } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'zip<A extends readonly unknown[]>(sources: [...ObservableInputTuple<A>]): Observable<A>',
   'zip<A extends readonly unknown[], R>(sources: [...ObservableInputTuple<A>], resultSelector: (...values: A) => R): Observable<R>',
   'zip<A extends readonly unknown[]>(...sources: [...ObservableInputTuple<A>]): Observable<A>',
-  'zip<A extends readonly unknown[], R>(...sourcesAndResultSelector: [...ObservableInputTuple<A>, (...values: A) => R]): Observable<R>'
+  'zip<A extends readonly unknown[], R>(...sourcesAndResultSelector: [...ObservableInputTuple<A>, (...values: A) => R]): Observable<R>',
 ]
 const data0 = ref<string>('')
 const data1 = ref<string>('')

@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { of } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'of(value: null): Observable<null>',
   'of(value: undefined): Observable<undefined>',
   'of(): Observable<never>',
   'of<T>(value: T): Observable<T>',
-  'of<A extends readonly unknown[]>(...values: A): Observable<ValueFromArray<A>>'
+  'of<A extends readonly unknown[]>(...values: A): Observable<ValueFromArray<A>>',
 ]
 const data = ref<string>()
 const result = ref<string>()

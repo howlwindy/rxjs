@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = ['mapTo<R>(value: R): OperatorFunction<unknown, R>']
 </script>
 <template>

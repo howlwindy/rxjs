@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'delay<T>(due: number | Date, scheduler?: SchedulerLike): MonoTypeOperatorFunction<T>'
+  'delay<T>(due: number | Date, scheduler?: SchedulerLike): MonoTypeOperatorFunction<T>',
 ]
 </script>
 <template>

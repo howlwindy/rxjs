@@ -1,6 +1,6 @@
+import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
-import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 // 这里的属性key顺序就是官网文档的顺序
@@ -19,11 +19,11 @@ export default defineConfig((config) => {
     publicDir: process.env.VITE_PUBLIC_DIR, // 从来没有在源码中用过或index.html直接用过的文件的所在目录，打包后直接在dist中与index.html同级
     cacheDir: process.env.VITE_CACHE_DIR, // 缓存文件目录，提升打包性能，可自定义
     resolve: {
-      alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }]
+      alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
     },
     css: {
       // modules: false, // 配置css模块的行为并传递选项到postcss-modules
-      postcss: './postcss.config.js' // postcss.config.js 的路径
+      postcss: './postcss.config.js', // postcss.config.js 的路径
       // preprocessorOptions: {
       // 配置对应的预处理器
       // }
@@ -58,7 +58,7 @@ export default defineConfig((config) => {
       //   strict: false, // ????
       //   allow: [], // ????
       // },
-      origin: process.env.VITE_SERVER_ORIGIN // 定义origin来生成assets urls
+      origin: process.env.VITE_SERVER_ORIGIN, // 定义origin来生成assets urls
     },
     build: {
       // target: ['es2015'], // ????
@@ -80,9 +80,9 @@ export default defineConfig((config) => {
       write: process.env.VITE_BUILD_WRITE, // true ? 可将bundle写入disk : 不可将bundle写入disk  ????
       emptyOutDir: process.env.VITE_BUILD_EMPTY_OUT_DIR, // 每次打包都先清空outDir
       brotliSize: process.env.VITE_BUILD_BROTLI_SIZE, // 大型项目的压缩时间长，禁用可提升大型项目的构建性能
-      chunkSizeWarningLimit: process.env.VITE_BUILD_CHUNK_SIZE_WARNING_LILMIT // 每个chunk的警告阈值
+      chunkSizeWarningLimit: process.env.VITE_BUILD_CHUNK_SIZE_WARNING_LILMIT, // 每个chunk的警告阈值
       // watch: {}, // ????
-    }
+    },
     // optimizeDeps: {
     // entries: [], // ????
     // exclude: [], // ????

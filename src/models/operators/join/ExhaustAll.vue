@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
-  'exhaustAll<O extends ObservableInput<any>>(): OperatorFunction<O, ObservedValueOf<O>>'
+  'exhaustAll<O extends ObservableInput<any>>(): OperatorFunction<O, ObservedValueOf<O>>',
 ]
 </script>
 <template>

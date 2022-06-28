@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import { of, race } from 'rxjs'
+import { ref, watch } from 'vue'
+
 import SrcVue from '@/components/Src.vue'
+
 const src: string[] = [
   'race<T extends readonly unknown[]>(inputs: [...ObservableInputTuple<T>]): Observable<T[number]>',
-  'race<T extends readonly unknown[]>(...inputs: [...ObservableInputTuple<T>]): Observable<T[number]>'
+  'race<T extends readonly unknown[]>(...inputs: [...ObservableInputTuple<T>]): Observable<T[number]>',
 ]
 const data0 = ref<string>('')
 const data1 = ref<string>('')
