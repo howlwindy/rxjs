@@ -6,7 +6,7 @@ import { defineConfig, loadEnv } from 'vite'
 // 这里的属性key顺序就是官网文档的顺序
 // tsconfig.target === 'es5'时入参是1个
 export default defineConfig((config) => {
-  process.env = loadEnv(config.mode, process.cwd())
+  process.env = loadEnv(config.mode, '')
   console.log(process.env)
   if (config.command !== 'serve')
     console.log(`process.env = ${process.env}\nconfig = ${config}`)

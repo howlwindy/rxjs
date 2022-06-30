@@ -43,7 +43,7 @@ recursive(routes())
     <router-link
       v-for="v of nav"
       :key="v.label"
-      style="text-decoration: none"
+      style="text-decoration: none; max-width: 200px"
       :style="{
         marginLeft: `${v.level * 15}px`,
         padding: '2px 5px',
