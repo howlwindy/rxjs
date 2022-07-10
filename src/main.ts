@@ -1,7 +1,7 @@
 import hljs from 'highlight.js'
 import 'highlight.js/styles/default.css'
 import { createPinia } from 'pinia'
-import { createApp } from 'vue'
+import { createApp } from 'vue/dist/vue.esm-bundler'
 
 import App from './App.vue'
 import './index.css'
